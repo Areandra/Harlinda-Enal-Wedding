@@ -1,4 +1,4 @@
-import './InvitationCard.css'
+import '../components/InvitationCard.css'
 import Bunga1 from '../assets/Bunga1.png'
 import Bunga2 from '../assets/Bunga2.png'
 import Bunga3 from '../assets/Bunga3.png'
