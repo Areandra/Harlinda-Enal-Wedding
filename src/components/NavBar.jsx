@@ -1,4 +1,4 @@
-import '../components/NavBar.css'
+import '../components/navBar.css'
 
 function NavBar() {
     return (
