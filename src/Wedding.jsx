@@ -12,7 +12,7 @@ function Hero() {
             <section id="Hero">
                 <div>
                     <h1>Hero</h1>
-                    <Link to="/opened">Wedding Details</Link>
+                    <Link to="/opened">Wedding Details Go</Link>
                 </div>
             </section>
         </>
