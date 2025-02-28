@@ -1,0 +1,6 @@
+section#Hero {
+    background-image: url(./assets/LandingPageBackground.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
