@@ -1,0 +1,67 @@
+section#Hero {
+    height: 100dvh;
+    background-image: url(../assets/LandingPageBackground.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: unset;
+    align-content: center;
+    flex-direction: column;
+}
+
+section#Hero div {
+    display: flex;
+    justify-content: unset;
+    align-content: center;
+    flex-direction: column;
+}
+
+#Button{
+    position: absolute;
+    border: none;
+    bottom: 12%;
+}
+
+.button {
+    background-color: #DBB75F;
+    border: none;
+    justify-self: flex-end;
+    color: white;
+    padding: 1em 2em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover {
+    background-color: #f1f1f1;
+    color: #DBB75F;
+    animation: HoverBotton 0.5s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes HoverBotton {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+    
+}
+
+@media screen and (min-width: 550px) {
+    section#Hero {
+        background-image: url(../assets/LandingPageLandscape.jpg);
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    
+}

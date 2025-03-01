@@ -3,18 +3,13 @@ import PrayPage from './page/PrayPage.jsx'
 import NavBar from './components/NavBar.jsx'
 import GiftPage from './page/GiftPage.jsx'
 import RsvpPage from './page/RsvpPage.jsx'
-import './Wedding.css'
+import HeroPage from './page/HeroPage.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Hero() {
     return (
         <>
-            <section id="Hero">
-                <div>
-                    <h1>Hero</h1>
-                    <Link to="/opened">Wedding Details</Link>
-                </div>
-            </section>
+            <HeroPage />
         </>
     )
 }
