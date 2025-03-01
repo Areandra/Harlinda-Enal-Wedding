@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root {
+    --primary-color: #DBB75F;
+    --secondary-color: #65855B;
+    --tertiary-color: #000000;
+    --quaternary-color: #f1f1f1;
+}
 
 body {
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;  /* Menghilangkan scrollbar di Internet Explorer */
+    scrollbar-width: none; /* Menghilangkan scrollbar di Firefox */
 }
 
 section {
@@ -14,3 +23,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+::-webkit-scrollbar {
+    display: none; /* Menghilangkan scrollbar di Chrome & Safari */
+  }

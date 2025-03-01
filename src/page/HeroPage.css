@@ -1,26 +1,119 @@
 section#Hero {
+    position: relative;
+    overflow: hidden;
     height: 100dvh;
     background-image: url(../assets/LandingPageBackground.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: unset;
+    justify-content: center;
     align-content: center;
     flex-direction: column;
 }
 
-section#Hero div {
+section#Hero div#Calbot {
+    margin-top: -5rem;
     display: flex;
-    justify-content: unset;
+    justify-content: center;
     align-content: center;
     flex-direction: column;
+}
+
+#Calbot div {
+    margin: 2rem;
+}
+
+section#Hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-shadow: var(--secondary-color) 0px 0px 15px;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+section#Hero div#first img{
+    position: absolute;
+    animation: infinite 15s AnimateRotate linear;
+}
+
+section#Hero div#second img{
+    position: absolute;
+    animation: infinite 15s AnimateRotate linear reverse;
+}
+
+img#BH1 {
+    width: 30dvw;
+    bottom: 10%;
+    left: -5%;
+    opacity: 0;
+}
+
+img#BH2 {
+    z-index: 1;
+    width: 30dvw;
+    bottom: -3%;
+    left: -8%;
+    transform: rotate(28deg);
+    max-width: 150px;
+    transform-origin: bottom;
+}
+
+
+img#BH3 {
+    width: 30dvw;
+    bottom: 5em;
+    left: -1.5em;
+    max-width: 200px;
+    transform-origin: bottom left;
+}
+
+img#BH4 {
+    width: 40dvw;
+    max-width: 250px;
+    bottom: 1em;
+    left: -7.5em;
+    transform: rotate(50deg);
+    transform-origin: bottom;
+    z-index: 1;
+}
+
+img#BH5 {
+    z-index: 1;
+    width: 30dvw;
+    bottom: -3%;
+    right: -8%;
+    transform: rotate(-28deg) rotateY(180deg);
+    max-width: 150px;
+    transform-origin: bottom;
+}
+
+img#BH6 {
+    width: 30dvw;
+    bottom: 5em;
+    right: -10.9em;
+    max-width: 200px;
+    transform-origin: bottom left;
+    transform: rotateY(180deg);
+}
+
+img#BH7 {
+    width: 40dvw;
+    max-width: 250px;
+    bottom: 2.75em;
+    right: -8.85em;
+    transform: rotate(-59deg) rotateY(180deg);
+    transform-origin: bottom;
+    z-index: 1;
 }
 
 #Button{
     position: absolute;
     border: none;
-    bottom: 12%;
+    bottom: 20%;
 }
 
 .button {
