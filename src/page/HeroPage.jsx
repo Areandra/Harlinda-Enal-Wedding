@@ -42,7 +42,7 @@ function HeroPage() {
                     </div>
                     <div id="Guest">
                         <h1>To :</h1>
-                        <p>Diah Ramayanti</p>
+                        <p>{tamu}</p>
                     </div>
                 </div>
             </section>

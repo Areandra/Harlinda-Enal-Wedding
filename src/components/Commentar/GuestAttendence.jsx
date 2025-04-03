@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "./firebaseConfig";
 import { collection, addDoc, query, onSnapshot } from "firebase/firestore";
+import "./GuestAttendence.css"; 
 
 function GuestAttendance() {
   const [guestName, setGuestName] = useState("");
@@ -47,20 +48,21 @@ function GuestAttendance() {
 
   return (
     <div className="guest-attendance-container">
-      <h2>Kedatangan Tamu</h2>
-      <button onClick={() => handleAddGuest(true)} disabled={isNameExists}>Tandai Hadir</button>
-      <button onClick={() => handleAddGuest(false)} disabled={isNameExists}>Tandai Tidak Hadir</button>
+        <h2>Kedatangan Tamu</h2>
+        {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
+        <div className="input-container">
+          <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Hadir</button>
+          <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Tidak Hadir</button>
+        </div>
+        <button className="list-guest" onClick={toggleGuestList}>
+          {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
+        </button>
 
-      {isNameExists && <p style={{ color: 'red' }}>Nama tamu sudah terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
-      
-      <button onClick={toggleGuestList}>
-        {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
-      </button>
-
-      {showGuestList && (
-        <>
-          <h3>Daftar Tamu</h3>
-          <ul>
+        {showGuestList && (
+          <div className="guest-list">
+            <h3>Daftar Tamu</h3>
+            <div className="listContainer">
+            <ul style={{listStyle: 'none', padding: '0',}}>
             {guests.map((guest) => (
               <li
                 key={guest.id}
@@ -76,7 +78,8 @@ function GuestAttendance() {
               </li>
             ))}
           </ul>
-        </>
+          </div>
+        </div>
       )}
     </div>
   );

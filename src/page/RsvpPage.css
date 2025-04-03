@@ -1,2 +1,4 @@
 section#RsvpPage {
+  height: auto;
+  overflow-y: hidden;
 }

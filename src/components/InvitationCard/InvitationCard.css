@@ -13,13 +13,10 @@
     width: 74dvw;
     max-width: 350px;
     background-color: rgba(245, 245, 220, 0.722);
-    /* background-image: url(../assets/LandingPageBackground.jpg);
-    background-position: center;
-    background-size: cover; */
     border: 0.75em double #DBB75F;
     border-radius: 50% / 130px;
     box-sizing: border-box;
-    position: relative; /* Tambahkan position relative agar gambar mengikuti card */
+    position: relative; 
     text-shadow: #DBB75F 0px 0px 10px;
     box-shadow: #DBB75F 0px 0px 20px;
 }
