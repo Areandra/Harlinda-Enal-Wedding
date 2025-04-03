@@ -10,29 +10,6 @@ import MapsCard from '../components/MapsCard/Maps';
 
 
 function PrayPage() {
-  // const [isOpen, setIsOpen] = useState (false);
-  // const [bookHasAnimated, setBookHasAnimated] = useState(false);
-  // const PrayBook = () => {
-  //   return (
-  //     <motion.div
-  //       initial={!bookHasAnimated ? (!isOpen ? { opacity: 0, y: 300 } : { opacity: 1, y: 0 }) : { opacity: 1, y: 0 }}
-  //       whileInView={{ opacity: 1, y: 0 }}
-  //       viewport={ {once: true, amount: 0.5 } }  
-  //       transition={{ duration: 2, ease: "easeOut" }}
-  //       onAnimationComplete={() => setBookHasAnimated(true) }
-
-  //     > <div className="container">
-  //         <div className="bookCover">
-  //           <div id="Isi">Isi</div>
-  //         </div>
-  //         <div className={`book ${isOpen ? "open" : "closed"}`} onClick={() => setIsOpen(!isOpen)}>
-  //           <div className="cover">Klik untuk Buka</div>
-  //           <div className="page"></div>
-  //         </div>
-  //       </div>
-  //     </motion.div>
-  //   )
-  // }
   return (
     <>
         <section id="PrayPage">

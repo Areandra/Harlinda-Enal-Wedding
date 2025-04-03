@@ -1,6 +1,6 @@
 import PhotoProfil from '../../assets/Pr.jpeg';
 import Bunga3 from '../../assets/Bunga3.png'
-import Bunga4 from '../../assets/bunga4.png'
+import Bunga4 from '../../assets/Bunga4.png'
 import ButterFly from '../ButterFly/ButterFly';
 import './CalonCard.css'; 
 
