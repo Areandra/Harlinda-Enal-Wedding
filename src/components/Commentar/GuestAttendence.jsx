@@ -47,6 +47,7 @@ function GuestAttendance() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="guest-attendance-container">
         <h2>Kedatangan Tamu</h2>
         {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
@@ -63,6 +64,24 @@ function GuestAttendance() {
             <h3>Daftar Tamu</h3>
             <div className="listContainer">
             <ul style={{listStyle: 'none', padding: '0',}}>
+=======
+    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',}} className="guest-attendance-container">
+      <h2>Kedatangan Tamu</h2>
+      {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
+      <div style={{display:'flex', flexDirection: 'row',}}>
+      <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Hadir</button>
+      <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Tidak Hadir</button>
+      </div>
+      <button style={{margin: 'auto'}} onClick={toggleGuestList}>
+        {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
+      </button>
+
+      {showGuestList && (
+        <div style={{height: '200px', width: '200px', display: 'flex', flexDirection:'column', justifyItems: 'center', alignItems: 'center',}}>
+          <h3>Daftar Tamu</h3>
+          <div className="listContainer" style={{height: '150px', width: 'auto', overflowY: 'auto',}}>
+          <ul style={{listStyle: 'none', padding: '0',}}>
+>>>>>>> a6f397f618c0bdeecd8c01e1e5a5903c0d54d87b
             {guests.map((guest) => (
               <li
                 key={guest.id}
