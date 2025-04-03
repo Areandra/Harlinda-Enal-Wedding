@@ -46,21 +46,22 @@ function GuestAttendance() {
   };
 
   return (
-    <div className="guest-attendance-container">
+    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',}} className="guest-attendance-container">
       <h2>Kedatangan Tamu</h2>
-      <button onClick={() => handleAddGuest(true)} disabled={isNameExists}>Tandai Hadir</button>
-      <button onClick={() => handleAddGuest(false)} disabled={isNameExists}>Tandai Tidak Hadir</button>
-
-      {isNameExists && <p style={{ color: 'red' }}>Nama tamu sudah terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
-      
-      <button onClick={toggleGuestList}>
+      {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
+      <div style={{display:'flex', flexDirection: 'row',}}>
+      <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Hadir</button>
+      <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Tidak Hadir</button>
+      </div>
+      <button style={{margin: 'auto'}} onClick={toggleGuestList}>
         {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
       </button>
 
       {showGuestList && (
-        <>
+        <div style={{height: '200px', width: '200px', display: 'flex', flexDirection:'column', justifyItems: 'center', alignItems: 'center',}}>
           <h3>Daftar Tamu</h3>
-          <ul>
+          <div className="listContainer" style={{height: '150px', width: 'auto', overflowY: 'auto',}}>
+          <ul style={{listStyle: 'none', padding: '0',}}>
             {guests.map((guest) => (
               <li
                 key={guest.id}
@@ -76,7 +77,8 @@ function GuestAttendance() {
               </li>
             ))}
           </ul>
-        </>
+          </div>
+        </div>
       )}
     </div>
   );

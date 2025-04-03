@@ -1,4 +1,5 @@
 import './InvitationCard.css'
+import { Link, useSearchParams } from 'react-router-dom';
 import Bunga1 from '../../assets/Bunga1.png';
 import Bunga2 from '../../assets/Bunga2.png';
 import Bunga3 from '../../assets/Bunga3.png';
@@ -35,6 +36,8 @@ const InvitationCard = () => {
 export default InvitationCard;
 
 function Card() {
+    const [searchParams] = useSearchParams();
+    const tamu = searchParams.get("tamu");
     return (
         <div className="card">
             <img id="B1" src={Bunga1} alt="bunga" />
@@ -52,17 +55,11 @@ function Card() {
                     <h1>Harlinda MA</h1>
                 </div>
             </div>
-            {/* <div className="WeddingDate">
-                <h1>Saturday</h1>
-                <p>23 April 2025</p>
-            </div>
-            <div className="CountDown">
-                <h1>Countdown :</h1>
-                <h2>00 : 00 : 00 : 00</h2>
-            </div> */}
             <div className="Guest">
                 <h1>Kepada Yth.</h1>
-                <p>Diah Ramayanti</p>
+                {tamu && tamu !== "null" 
+                  ? (<p>{tamu}</p>) 
+                  : (<p>Tamu Tidak Diundang</p>)}
             </div>
         </div>
     );
