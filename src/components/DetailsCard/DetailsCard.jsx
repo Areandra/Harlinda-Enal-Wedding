@@ -2,7 +2,7 @@ import { motion, useScroll, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import "./DetailsCard.css"; // Assuming you have a CSS file for styles
 import Bunga3 from '../../assets/Bunga3.png';
-import Bunga2 from '../../assets/bunga2.png';
+import Bunga2 from '../../assets/Bunga2.png';
 
 const DetailsCard = ({ title, date, time, img }) => {
   const ref = useRef(null);
