@@ -1,0 +1,101 @@
+  
+  .Laki {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 100% 100% 5% 5% / 65% 65% 5% 5%;
+    margin-top: 5dvh;
+  }
+  
+  .NamaPembelai .fp{
+    position: relative;
+    width: 96px;
+    margin: 5%;
+  }
+  
+  .NamaPembelai h2 {
+    position: relative;
+    margin: 2%  !important;
+    font-family: "Great Vibes", cursive;
+    font-size: 1.5em;
+    margin-bottom: 0% !important;
+  }
+  
+  .NamaPembelai p {
+    margin: 2% !;
+  }
+  
+  .Perempuan {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 5% 5% 100% 100% / 5% 5% 65% 65%;
+    margin-bottom: 5em;
+  }
+  
+  #Pembelai h2 {
+    margin-top: 0;
+  }
+
+  .BungaKiri{
+    position: absolute;
+    z-index: 1;
+  }
+
+  .BungaKiri#Ba1{
+    width: 16vh;
+    max-width: 120px;
+    right: 108.5%;
+    top:-40%;
+    transform-origin: bottom right;
+    transform: rotateZ(180deg) rotate(40deg);
+  }
+
+  .Laki .BungaKiri#Ba1{
+    transform: rotateZ(0deg) rotateY(180deg) rotate(40deg);
+    top: 50%;
+  }
+  
+  .BungaKiri#Ba2{
+      max-width: 140px;
+      width: 34vw;
+      right: 87.5%;
+      top: -7%;
+      transform: rotateY(180deg) rotate(30deg);
+  }
+  
+  .Laki .BungaKiri#Ba2{
+      transform: rotateZ(180deg) rotateY(0deg) rotate(30deg);    
+      top: 58%;
+}
+
+  .BungaKanan#Ba1{
+    width: 16vh;
+    max-width: 120px;
+    right: -9%;
+    top:-39%;
+    transform-origin: bottom right;
+    transform: rotateY(180deg) rotateZ(180deg) rotate(40deg);
+  }
+
+  .Laki .BungaKanan#Ba1{
+    transform: rotateZ(0deg) rotateY(0deg) rotate(40deg);
+    top: 50%;
+  }
+
+  .BungaKanan#Ba2{
+    max-width: 140px;
+    width: 34vw;
+    right: -47%;
+    top: -7%;
+    transform: rotateY(180deg) rotateY(180deg) rotate(30deg);
+  }
+
+  .Laki .BungaKanan#Ba2{
+    transform: rotateZ(180deg) rotateY(180deg) rotate(30deg);    
+    top: 58%; 
+  }
+  

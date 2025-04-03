@@ -1,0 +1,85 @@
+.logo img {
+  height: auto;
+  width: 54px;
+}
+
+.containerc {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.cardc {
+  margin: auto;
+  background: radial-gradient(circle, white 0%, #d5d5d5 100%);
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55);
+}
+
+.remove, .logo {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.remove {
+  top: 30px;
+  right: 30px;
+  opacity: .9;
+  color: black;
+}
+
+.remove:hover {
+  color: #f06b5d;
+}
+
+.logo {
+  top: 20px;
+  left: 30px;
+  font-size: 3em;
+  opacity: 1;
+}
+
+.number, .owner {
+  display: block;
+  position: absolute;
+  left: 30px;
+  cursor: default;
+  color: black;
+  opacity: .9;
+  transition: color .7s ease-out;
+}
+
+.number {
+  bottom: 60px;
+  letter-spacing: 4px;
+}
+
+.owner {
+  bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.TextPopup{
+  position: fixed;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  bottom: 20%;
+  background-color: #d5d5d5;
+}
+
+.containerUtama{
+  height: auto;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5vh;
+}

@@ -1,0 +1,165 @@
+/* Container utama */
+.comments-container {
+  width: 70vw;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.comment-box {
+  height: 400px; /* Batasi tinggi komentar */
+  overflow-y: auto; /* Tambahkan scroll jika konten melebihi batas */
+  padding: 10px;
+  background: #222;
+  border-radius: 8px;
+}
+
+/* Form komentar */
+.comment-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-input, .reply-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #333;
+  color: white;
+}
+
+/* Tombol Kirim */
+.comment-submit, .reply-submit {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.comment-submit:hover, .reply-submit:hover {
+  background: #0056b3;
+}
+
+/* List Komentar */
+.comment-box {
+  margin-top: 10px;
+}
+
+.comment {
+  background: #333;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-name {
+  font-weight: bold;
+  color: #ff4b4b;
+  font-size: 0.85rem;
+
+}
+
+.comment-time {
+  font-size: 0.65rem;
+  color: #bbb;
+}
+
+.comment-text {
+  margin: 1vh;
+  font-size: 14px;
+}
+
+/* Avatar */
+.avatar {
+  width: 30px;
+  height: 30px;
+  margin: 1vh;
+  margin-left: 0.5vw;
+  background: #ff4b4b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.comment-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Tombol Aksi */
+.comment-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.like-btn, .dislike-btn, .reply-btn, .toggle-reply-btn {
+  background: none;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.like-btn:hover, .dislike-btn:hover, .reply-btn:hover, .toggle-reply-btn:hover {
+  color: white;
+}
+
+/* Balasan */
+.reply {
+  background: #444;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.reply-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.reply-name {
+  font-weight: bold;
+  color: #ff4b4b;
+}
+
+.reply-time {
+  font-size: 11px;
+  color: #bbb;
+}
+
+/* Indentasi balasan */
+
+
+.reply-list {
+  margin-top: 5px;
+  padding-left: 30px;
+  border-left: 2px solid gray;
+  list-style: none;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+}

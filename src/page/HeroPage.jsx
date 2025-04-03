@@ -1,11 +1,13 @@
 import './HeroPage.css';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import BungaHero1 from '../assets/BungaHero1.png';
 import BungaHero2 from '../assets/BungaHero2.png';
 import BungaHero3 from '../assets/BungaHero3.png';
 import BungaHero4 from '../assets/BungaHero4.png';
 
 function HeroPage() {
+    const [searchParams] = useSearchParams();
+    const tamu = searchParams.get("tamu");
     return (
         <>
             <section id="Hero">
@@ -27,7 +29,7 @@ function HeroPage() {
                         localStorage.setItem("hasAnimated", "false");
                         console.log("hasAnimated:", localStorage.getItem("hasAnimated"));
                     }}
-                    to="/opened"
+                    to={`/opened?tamu=${tamu}`}
                 > Buka Undangan
                 </Link>
                 </div>

@@ -4,7 +4,7 @@ function NavBar() {
     return (
         <>
         <nav>
-            <a href="#LandingPage">
+            <a href="#WeddingPage">
                 <img width="37" height="37" src="https://img.icons8.com/pulsar-line/48/engagement-ring.png" alt="engagement-ring"/>
             </a>
             <a href="#PrayPage">

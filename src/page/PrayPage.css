@@ -1,44 +1,287 @@
+@import url('../components/InvitationCard/InvitationCard.css');
+
 section#PrayPage {
-    background: linear-gradient(225deg, #DCDCCF, #65855B);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.line{
+  position: absolute;
+  z-index: -1;
+  width: 28vw;
+  max-width: 150px;
+  height: 100%;
+  background: repeating-linear-gradient(125deg, var(--secondary-color) 0px, var(--secondary-color) 50px, #85b178 50px, var(--secondary-color) 100px);
+  background-size: 100px 100px;
+    opacity: 0.5;
 }
 
 .container{
-    perspective: 1000px;
+  height: 90dvh;
+  width: 100vw;
+  position: relative;
 }
 
-.book {
-    position: relative;
-    width: 200px;
-    height: 280px;
-    transform-style: preserve-3d;
-    transition: transform 0.7s ease-in-out;
-    cursor: pointer;
-    transform-origin: left;
-  }
-  
-  .book.open {
-    transform: rotateY(-120deg);
-  }
-  
-  .cover,
-  .page {
+.container#Detail{
+  max-width: 400px;
+  padding: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+#Detail .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70dvw;
+  max-width: 350px;
+  height: auto;
+}
+
+.container#Location{
+  position: relative;
+  overflow-y: hidden;
+  height: auto;
+}
+
+.container#Location h1{
+  margin-top: 5vh;
+}
+
+.container#Location p{
+  margin-bottom: 5vh;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  max-width: 500px;
+}
+
+.pageContainer#PrayDate {
+  display: block !important;
+  margin: auto;
+}
+
+.PrayBox .text{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.PrayBox {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ini akan menempatkan elemen terakhir di bawah */
+  align-items: center; /* Pusatkan secara horizontal */
+  width: 70svw;
+  max-width: 340px;
+  height: calc(70svh + 60px);
+  border-radius: 100% 100% 0% 0% / 50% 50% 0% 0%;
+  border-bottom: none;
+}
+
+.PrayBox p{
+  text-align: justify;
+  font-size: 0.8rem;
+  margin-top: 60px;
+  position: relative;
+  width: 80%;
+  max-width: 230px;
+  text-align: center;
+}
+
+.PrayBox h1{
+  position: relative;
+}
+
+.CountBox {
+  border-bottom: none;
+  bottom: 0vh;
+  z-index: 2;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40svw;
+  max-width: 200px;
+  background-color: #d1d9bcf7;
+  height: calc(40svh + 60px) ;
+  border-radius: 100% 100% 0% 0% / 50% 50% 0% 0%; 
+}
+
+.CountBox h1 {
+  margin-top: 40%;
+  text-align: center;
+}
+
+.Time{
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.Time p{
+  width: 2.25rem;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  padding-bottom: calc(2.25rem / 10);
+  padding: calc(2.25rem / 100)
+}
+
+.Batas {
+  height: 4dvh;
+  width: 100vw;
+  background-color: var(--primary-color);
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0vh;
+  z-index: 5;
+}
+
+.container#Pembelai {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  height: auto;
+}
+
+.pageContainer#Pembelai {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Pembelai .Text {
+  display: flex;
+  margin-top: calc(3dvh + 60px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.NamaPembelai {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.NamaPembelai .card {
+  display: flex;
+  width: 60dvw;
+  max-width: 260px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 22em;
+}
+
+  .Bc {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border: 2px solid #333;
+    z-index: 1;
+    scale: 20%;
   }
-  
-  .cover {
-    background: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    z-index: 2;
+
+  .BungaKiri#Bk1 {
+    position: absolute;
+    width: 42vw;
+    right: 35%;
+    bottom: 38vh;
+    max-width: 210px;
+    transform-origin: bottom right;
+    transform: rotateY(180deg) rotate(15deg);
+    z-index: 1;
+    animation: infinite 15s AnimateRotate linear;
   }
-  
-  .page {
-    background: white;
+
+  .BungaKiri#Bk2{
+    position: absolute;
+    width: 40vw;
+    max-width: 200px;
+    right: 15%;
+    bottom: 38vh;
+    transform: rotate(10deg);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: infinite 15s AnimateRotate linear;
+  }
+
+  .BungaKiri#Bk3{
+    z-index: 1;
+    position: absolute;
+    transform-origin: bottom right;
+    transform: rotateY(180deg) rotate(40deg);
+    bottom: 8%;
+    left: 18%;
+    width: 35svw;
+    max-width: 175px;
+    animation: infinite 15s AnimateRotate linear;
+  }
+
+  .BungaKiri#Bk4{
+    z-index: 1;
+    position: absolute;
+    left: 30%;
+    bottom: 0%;
+    transform: rotateZ(90deg) rotate(180deg);
+    width: 45vw;
+    max-width: 210px;
+    animation: infinite 15s AnimateRotate linear;
+  }
+
+  .Kupu1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 18%;
+    bottom: 18%;
+    scale: 0.3;
     transform: rotateY(180deg);
   }
+
+  .BungaDan{
+    margin: 0.5% !important;
+    width: 30% !important;
+    animation: AnimateRotate 8s infinite linear;
+  }
+
+  .calons .BungaKiri, .calons .BungaKanan{
+    animation: infinite 15s AnimateRotate linear;
+  }
+
+  .card#Akad {
+    width: auto;
+    height: auto;
+  }
+

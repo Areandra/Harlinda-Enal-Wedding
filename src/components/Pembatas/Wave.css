@@ -1,0 +1,90 @@
+.wave, .wave1 {
+    will-change: transform;
+    z-index: 3 !important;
+
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url(/src/assets/wave.png);
+    filter: brightness(0) saturate(100%) invert(73%) sepia(71%) saturate(306%) hue-rotate(359deg) brightness(90%) contrast(91%);    
+    background-size: cover;
+  }
+  .wave1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url(/src/assets/wave1.png);
+    filter: brightness(0) saturate(100%) invert(73%) sepia(71%) saturate(306%) hue-rotate(359deg) brightness(90%) contrast(91%);    
+    background-size: cover;
+  }
+  .wave#wave1 {
+    opacity: 1;
+    animation: waves 24s linear infinite;
+    top: 0px;
+  }
+  .wave#wave2 {
+    opacity: 0.5;
+    animation: waves2 24s linear infinite;
+    top: 5px;
+  }
+  .wave#wave3 {
+    opacity: 0.2;
+    top: 10px;
+    animation: waves 12s linear infinite;
+  }
+  .wave#wave4 {
+    opacity: 0.7;
+    top:15px;
+    animation: waves2 12s linear infinite;
+  }
+  .wave1#wave1 {
+    opacity: 1;
+    animation: waves 24s reverse infinite;
+    bottom: 0px;
+  }
+  .wave1#wave2 {
+    opacity: 0.5;
+    animation: waves2 24s reverse infinite;
+    bottom: 5px;
+  }
+  .wave1#wave3 {
+    opacity: 0.2;
+    bottom: 10px;
+    animation: waves 12s reverse infinite;
+  }
+  .wave1#wave4 {
+    opacity: 0.7;
+    bottom:15px;
+    animation: waves2 12s reverse infinite;
+  }
+
+  @keyframes waves {
+    0%{
+      background-position-x: 1000px;
+    }
+    50% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
+  }
+  
+  @keyframes waves2 {
+    0%{
+      background-position-x: 0px;
+    }
+    50% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }

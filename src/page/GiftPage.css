@@ -1,3 +1,13 @@
 section#GiftPage {
-    background: linear-gradient(135deg, #65855B, #DCDCCF);
+    height: auto;
+}
+
+section#GiftPage h1{
+    margin-top: 5dvh;
+}
+
+section#GiftPage p {
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 5vh;
 }

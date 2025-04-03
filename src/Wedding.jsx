@@ -1,6 +1,6 @@
 import WeddingPage from './page/WeddingPage.jsx'
 import PrayPage from './page/PrayPage.jsx'
-import NavBar from './components/NavBar.jsx'
+import NavBar from './components/Navbar/NavBar.jsx'
 import GiftPage from './page/GiftPage.jsx'
 import RsvpPage from './page/RsvpPage.jsx'
 import HeroPage from './page/HeroPage.jsx'

@@ -11,6 +11,13 @@ body {
     padding: 0;
     -ms-overflow-style: none;  /* Menghilangkan scrollbar di Internet Explorer */
     scrollbar-width: none; /* Menghilangkan scrollbar di Firefox */
+    scroll-behavior: smooth;
+    background: linear-gradient(222deg, 
+    #DCDCCF 0%, 
+    #65855B 25%, 
+    #DCDCCF 50%, 
+    #65855B 75%, 
+    #DCDCCF 100%);
 }
 
 section {

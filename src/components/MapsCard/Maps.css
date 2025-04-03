@@ -1,0 +1,17 @@
+.MapsCard{
+    display: flex;
+    margin: auto;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.maps{
+    margin: auto;
+    border-radius: 2%;
+    width: 65vw;
+    max-width: 350px;
+    height: 65vw;
+    max-height: 350px;
+}

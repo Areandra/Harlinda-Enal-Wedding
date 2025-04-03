@@ -1,4 +1,4 @@
-div.card {
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,7 @@ div.card {
     /* background-image: url(../assets/LandingPageBackground.jpg);
     background-position: center;
     background-size: cover; */
-    border: .75em double #DBB75F;
+    border: 0.75em double #DBB75F;
     border-radius: 50% / 130px;
     box-sizing: border-box;
     position: relative; /* Tambahkan position relative agar gambar mengikuti card */
@@ -24,13 +24,13 @@ div.card {
     box-shadow: #DBB75F 0px 0px 20px;
 }
 
-div.card img {
+.card img {
     position: absolute;
     z-index: 1;
     
 }
 
-img#B1{
+#B1{
     top: -25%;
     left: 58%;
     max-width: 9.5em;
@@ -40,16 +40,15 @@ img#B1{
     transform-origin: bottom left;
 }
 
-img#B2{
+#B2{
     top: -10%;
     transform: translateX(-3%);
-    position: center;
     max-width: 9.5em;
     width: 32svw;
     animation: infinite 15s AnimateRotate linear;
 }
 
-img#B3{
+#B3{
     bottom: 15%;
     transform: rotate(38deg);
     left: -43%;
@@ -59,7 +58,7 @@ img#B3{
     animation: infinite 10s AnimateRotate;
 }
 
-img#B4{
+#B4{
     bottom: -4%;
     left: -20%;
     max-width: 11em;
@@ -68,7 +67,7 @@ img#B4{
     animation: infinite 15s AnimateRotate linear;
 }
 
-img#B5{
+#B5{
     max-width: 11rem;
     right: 41%;
     bottom: 9.5%;
@@ -77,7 +76,7 @@ img#B5{
     animation: infinite 14s AnimateRotate linear;
 }
 
-img#B6{
+#B6{
     z-index: 0;
     bottom: 10%;
     right: -4%;
@@ -88,7 +87,7 @@ img#B6{
     animation: infinite 10s AnimateRotate linear;
 }
 
-img#B7{
+#B7{
     bottom: -4%;
     right: -8%;
     max-width: 9em;
@@ -97,12 +96,12 @@ img#B7{
     animation:  infinite 20s AnimateRotate linear;
 }
 
-div.card div {
+.card div {
     position: relative;
     z-index: 2;
 }
 
-div#Calbot {
+.Calbot {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,13 +114,12 @@ h1, h2 {
     font-size: 1rem;
     font-weight: normal;
     color: #DBB75F;
-    margin-bottom: 0.3rem;
     text-align: center;
     font-weight: normal;
     font-family: "Playfair Display", serif;
 }
 
-div#Calbot h1 {
+.Calbot h1 {
     font-size: 1.5rem;
     font-weight: normal;
     color: #ffffff;
@@ -130,7 +128,7 @@ div#Calbot h1 {
     text-align: center;
     font-family: "Great Vibes", cursive;
 }
-div#Calbot p {
+.Calbot p {
     margin-top: 0rem;
     font-size: 0.8rem;
     color: #ffffff;

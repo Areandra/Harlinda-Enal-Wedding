@@ -1,11 +1,11 @@
-import '../components/InvitationCard.css';
-import Bunga1 from '../assets/Bunga1.png';
-import Bunga2 from '../assets/Bunga2.png';
-import Bunga3 from '../assets/Bunga3.png';
-import Bunga4 from '../assets/Bunga4.png';
-import Bunga5 from '../assets/Bunga5.png';
-import Bunga6 from '../assets/Bunga6.png';
-import Bunga7 from '../assets/Bunga7.png';
+import './InvitationCard.css'
+import Bunga1 from '../../assets/Bunga1.png';
+import Bunga2 from '../../assets/Bunga2.png';
+import Bunga3 from '../../assets/Bunga3.png';
+import Bunga4 from '../../assets/Bunga4.png';
+import Bunga5 from '../../assets/Bunga5.png';
+import Bunga6 from '../../assets/Bunga6.png';
+import Bunga7 from '../../assets/Bunga7.png';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
@@ -44,7 +44,7 @@ function Card() {
             <img src={Bunga5} alt="bunga" id="B5" />
             <img src={Bunga6} alt="bunga" id="B6" />
             <img src={Bunga7} alt="bunga" id="B7" />
-            <div id="Calbot">
+            <div className="Calbot">
                 <p>Undangan Pernikahan</p>
                 <div id="Name">
                     <h1>Enal Bachdim</h1>
@@ -52,16 +52,16 @@ function Card() {
                     <h1>Harlinda MA</h1>
                 </div>
             </div>
-            <div id="WeddingDate">
+            {/* <div className="WeddingDate">
                 <h1>Saturday</h1>
                 <p>23 April 2025</p>
             </div>
-            <div id="CountDown">
+            <div className="CountDown">
                 <h1>Countdown :</h1>
                 <h2>00 : 00 : 00 : 00</h2>
-            </div>
-            <div id="Guest">
-                <h1>To :</h1>
+            </div> */}
+            <div className="Guest">
+                <h1>Kepada Yth.</h1>
                 <p>Diah Ramayanti</p>
             </div>
         </div>
