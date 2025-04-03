@@ -3,7 +3,7 @@ import Wave from "./Pembatas/PembatasOmbak";
 import Bunga5 from '../assets/Bunga5.png';
 import Bunga6 from '../assets/Bunga6.png';
 import Bunga3 from '../assets/Bunga3.png';
-import Bunga4 from '../assets/bunga4.png';
+import Bunga4 from '../assets/Bunga4.png';
 
 function PrayBox() {
     return (
