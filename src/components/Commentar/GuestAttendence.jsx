@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "./firebaseConfig";
 import { collection, addDoc, query, onSnapshot } from "firebase/firestore";
-import "./GuestAttendence.css"; 
+import "./GuestAttendence.css";
 
 function GuestAttendance() {
   const [guestName, setGuestName] = useState("");
@@ -48,21 +48,21 @@ function GuestAttendance() {
 
   return (
     <div className="guest-attendance-container">
-        <h2>Kedatangan Tamu</h2>
-        {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
-        <div className="input-container">
-          <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Hadir</button>
-          <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Tidak Hadir</button>
-        </div>
-        <button className="list-guest" onClick={toggleGuestList}>
-          {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
-        </button>
+      <h2>Kedatangan Tamu</h2>
+      {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} {/* Menampilkan pesan jika nama sudah ada */}
+      <div style={{display:'flex', flexDirection: 'row',}}>
+      <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Hadir</button>
+      <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Tidak Hadir</button>
+      </div>
+      <button style={{margin: 'auto'}} onClick={toggleGuestList}>
+        {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
+      </button>
 
-        {showGuestList && (
-          <div className="guest-list">
-            <h3>Daftar Tamu</h3>
-            <div className="listContainer">
-            <ul style={{listStyle: 'none', padding: '0',}}>
+      {showGuestList && (
+        <div style={{height: '200px', width: '200px', display: 'flex', flexDirection:'column', justifyItems: 'center', alignItems: 'center',}}>
+          <h3>Daftar Tamu</h3>
+          <div className="listContainer" style={{height: '150px', width: 'auto', overflowY: 'auto',}}>
+          <ul style={{listStyle: 'none', padding: '0',}}>
             {guests.map((guest) => (
               <li
                 key={guest.id}
