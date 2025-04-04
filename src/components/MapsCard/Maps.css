@@ -5,6 +5,7 @@
     justify-items: center;
     align-items: center;
     max-width: 500px;
+    margin-bottom: calc(60px + 5dvh);
 }
 
 .maps{

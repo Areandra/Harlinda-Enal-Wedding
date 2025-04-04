@@ -3,7 +3,7 @@ section#GiftPage {
 }
 
 section#GiftPage h1{
-    margin-top: 5dvh;
+    margin-top: calc(60px + 5dvh);
 }
 
 section#GiftPage p {

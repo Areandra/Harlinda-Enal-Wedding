@@ -29,14 +29,8 @@ function PrayPage() {
               <h1>Maps</h1>
               <p>Gedung Balai Kencana Makassar<br/>Jalan Dr.Sam Ratulangi No. 138 Makassar</p>
               <MapsCard />
-              <div className="imageContainer">
-                <img src="" alt="" />
-                <img src="" alt="" />
-              </div>
+              <Wave Pembatas="Atas"/>
             </div>
-            {/* <div id='containerBook'>
-              <PrayBook />
-            </div> */}
             </div>
         </section>
     </>
