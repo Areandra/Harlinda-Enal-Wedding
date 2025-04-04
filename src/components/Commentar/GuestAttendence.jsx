@@ -6,8 +6,8 @@ import "./GuestAttendence.css";
 function GuestAttendance() {
   const [guestName, setGuestName] = useState("");
   const [guests, setGuests] = useState([]);
-  const [isNameExists, setIsNameExists] = useState(false); // Menyimpan status apakah nama tamu sudah ada
-  const [showGuestList, setShowGuestList] = useState(false); // Menyimpan status untuk menampilkan daftar tamu
+  const [isNameExists, setIsNameExists] = useState(false);
+  const [showGuestList, setShowGuestList] = useState(false); 
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -21,29 +21,27 @@ function GuestAttendance() {
       const guestList = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
       setGuests(guestList);
 
-      // Mengecek apakah nama tamu sudah ada di database
       const nameExists = guestList.some(
         (guest) => guest.name.toLowerCase() === guestName.toLowerCase()
       );
-      setIsNameExists(nameExists); // Set status nama sudah ada
+      setIsNameExists(nameExists);
     });
 
     return () => unsubscribe();
-  }, [guestName]); // Menambahkan guestName ke dependency array agar pengecekan dilakukan saat guestName berubah
+  }, [guestName]); 
 
   const handleAddGuest = async (present) => {
-    if (!guestName.trim() || isNameExists) return; // Menghentikan jika nama kosong atau sudah ada
-
+    if (!guestName.trim() || isNameExists) return; 
     await addDoc(collection(db, "guests"), {
       name: guestName,
       present: present,
     });
 
-    setGuestName(""); // Reset input field setelah tamu ditambahkan
+    setGuestName("");
   };
 
   const toggleGuestList = () => {
-    setShowGuestList(!showGuestList); // Toggle untuk menampilkan/menghapus daftar tamu
+    setShowGuestList(!showGuestList);
   };
 
   return (
