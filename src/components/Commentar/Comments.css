@@ -7,15 +7,25 @@
   background: #222;
   color: white;
   padding: 15px;
-  border-radius: 8px;
+  background-color: rgba(245, 245, 220, 0.722);
+  border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 0.75em double #DBB75F;
+  box-shadow: #DBB75F 0px 0px 20px;
+}
+
+.comments-container h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: var(--primary-color) 0px 0px 20px !important;
 }
 
 .comment-box {
   height: 400px; /* Batasi tinggi komentar */
   overflow-y: auto; /* Tambahkan scroll jika konten melebihi batas */
   padding: 10px;
-  background: #222;
+  background: var(--primary-color);
   border-radius: 8px;
 }
 
@@ -30,15 +40,18 @@
   flex: 1;
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #444;
-  background: #333;
-  color: white;
+  border: 1px solid var(--secondary-color);
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Quicksand", sans-serif;
+
 }
 
 /* Tombol Kirim */
 .comment-submit, .reply-submit {
-  background: #007bff;
-  color: white;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: "Quicksand", sans-serif;
   border: none;
   padding: 6px 10px;
   cursor: pointer;
@@ -46,7 +59,8 @@
 }
 
 .comment-submit:hover, .reply-submit:hover {
-  background: #0056b3;
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* List Komentar */
@@ -55,7 +69,7 @@
 }
 
 .comment {
-  background: #333;
+  background: repeating-linear-gradient(145deg, var(--secondary-color) 0px, var(--secondary-color) 20px, #85b178 35px, var(--secondary-color) 100px);
   padding: 10px;
   border-radius: 6px;
   margin-bottom: 10px;
@@ -69,19 +83,23 @@
 
 .comment-name {
   font-weight: bold;
-  color: #ff4b4b;
+  color: var(--triary-color);
+  font-family: "Quicksand", sans-serif;
   font-size: 0.85rem;
 
 }
 
 .comment-time {
   font-size: 0.65rem;
-  color: #bbb;
+  color: var(--triary-color);
+  font-family: "Quicksand", sans-serif;
 }
 
 .comment-text {
   margin: 1vh;
   font-size: 14px;
+  color: var(--triary-color);
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Avatar */
@@ -90,7 +108,7 @@
   height: 30px;
   margin: 1vh;
   margin-left: 0.5vw;
-  background: #ff4b4b;
+  background: var(--primary-color);
   color: white;
   display: flex;
   align-items: center;

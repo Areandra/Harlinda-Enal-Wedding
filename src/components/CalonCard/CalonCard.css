@@ -1,4 +1,6 @@
-  
+  .calons {
+    text-shadow: var(--secondary-color) 0px 0px 50px;
+  }   
   .Laki {
     display: flex;
     flex-direction: column;
@@ -18,12 +20,15 @@
     position: relative;
     margin: 2%  !important;
     font-family: "Great Vibes", cursive;
+    color: var(--primary-color);
+    text-shadow: var(--primary-color) 0px 0px 20px !important;
     font-size: 1.5em;
     margin-bottom: 0% !important;
   }
   
   .NamaPembelai p {
     margin: 2% !;
+    color: var(--secondary-color);
   }
   
   .Perempuan {

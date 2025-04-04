@@ -170,6 +170,13 @@ section#PrayPage {
   height: auto;
 }
 
+#Pembelai .Text h1{
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: var(--primary-color) 0px 0px 20px !important;
+}
+
 .pageContainer#Pembelai {
   display: flex;
   flex-direction: column;
@@ -206,6 +213,12 @@ section#PrayPage {
   height: 22em;
 }
 
+#Detail .text h1, #Location h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: var(--primary-color) 0px 0px 20px !important;
+}
   .Bc {
     position: absolute;
     z-index: 1;

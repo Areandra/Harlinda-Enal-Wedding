@@ -2,3 +2,18 @@ section#RsvpPage {
   height: auto;
   overflow-y: hidden;
 }
+
+#RsvpPage h1 {
+  margin-top: 5dvh;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: var(--primary-color) 0px 0px 20px !important;
+}
+
+#RsvpPage p {
+  width: 70vw;
+  max-width: 350px;
+  margin: auto;
+  margin-bottom: 5vh;
+}

@@ -7,7 +7,6 @@ function RsvpPage() {
     <>
         <section id="RsvpPage">
             <div className="pageContainer">
-                
                 <h1>Pesan Dan Kesan</h1>
                 <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Berikan ucapan terbaik anda untuk kedua pembelai
                 </p>

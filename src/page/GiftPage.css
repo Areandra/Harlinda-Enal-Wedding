@@ -11,3 +11,11 @@ section#GiftPage p {
     margin: auto;
     margin-bottom: 5vh;
 }
+
+#GiftPage h1 {
+    margin-top: calc(60px + 5dvh) !important;
+    font-family: "Great Vibes", cursive;
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-shadow: var(--primary-color) 0px 0px 20px !important;
+}

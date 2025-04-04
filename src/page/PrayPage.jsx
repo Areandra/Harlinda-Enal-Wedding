@@ -26,7 +26,7 @@ function PrayPage() {
               <DetailsCard title="Resepsi" date="Rabu, 23 April 2025" time="11.00 WITA - 12.00 WITA" img="https://img.icons8.com/ios-filled/100/newlyweds.png"/>
            </div>
             <div className="container" id="Location">
-              <h1>Maps</h1>
+              <h1 style={{marginTop: "6vh"}}>Lokasi Acara</h1>
               <p>Gedung Balai Kencana Makassar<br/>Jalan Dr.Sam Ratulangi No. 138 Makassar</p>
               <MapsCard />
               <Wave Pembatas="Atas"/>

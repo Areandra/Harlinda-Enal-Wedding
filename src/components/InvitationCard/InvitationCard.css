@@ -113,7 +113,9 @@ h1, h2 {
     color: #DBB75F;
     text-align: center;
     font-weight: normal;
-    font-family: "Playfair Display", serif;
+    font-family: "Quicksand", sans-serif;
+    color: var(--secondary-color);
+    text-shadow: var(--secondary-color) 0px 0px 20px !important;
 }
 
 .Calbot h1 {
@@ -124,14 +126,18 @@ h1, h2 {
     margin-bottom: 0.3rem;
     text-align: center;
     font-family: "Great Vibes", cursive;
+    color: var(--primary-color);
+    text-shadow: var(--primary-color) 0px 0px 20px !important;
+
 }
 .Calbot p {
     margin-top: 0rem;
     font-size: 0.8rem;
-    color: #ffffff;
+    color: var(--secondary-color);
+    text-shadow: var(--secondary-color) 0px 0px 20px !important;
     margin-bottom: 1.5rem;
     text-align: center;
-    font-family: "Playfair Display", serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 p {
@@ -139,8 +145,7 @@ p {
     color: #ffffff;
     margin-bottom: 0.3rem;
     text-align: center;
-    font-family: "Playfair Display", serif;
-  
+    font-family: "Quicksand", sans-serif;
 }
 
 @keyframes AnimateRotate {
