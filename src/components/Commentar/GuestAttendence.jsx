@@ -49,8 +49,8 @@ function GuestAttendance() {
         <h2>Kedatangan Tamu</h2>
         {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} 
         <div className="input-container">
-          <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Hadir</button>
-          <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tandai Tidak Hadir</button>
+          <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Hadir</button>
+          <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tidak Hadir</button>
         </div>
         <button className="list-guest" onClick={toggleGuestList}>
           {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
@@ -60,14 +60,15 @@ function GuestAttendance() {
           <div className="guest-list">
             <h3>Daftar Tamu</h3>
             <div className="listContainer">
-            <ul style={{listStyle: 'none', padding: '0',}}>
+            <ul style={{width:'90%',margin: 'auto', listStyle: 'none', padding: '0',}}>
             {guests.map((guest) => (
-              <li
+              <li className="listName"
                 key={guest.id}
                 style={{
-                  backgroundColor: guest.present ? "green" : "red", 
+                  textAlign: 'center',
+                  backgroundImage: guest.present ? "repeating-linear-gradient(125deg, green 0px, green 10px, darkgreen 50px, green 100px)" : "repeating-linear-gradient(125deg, red 0px, red 10px, darkred 50px, red 100px)", 
                   color: "white",
-                  padding: "10px",
+                  padding: "5px",
                   margin: "5px 0",
                   borderRadius: "5px",
                 }}
