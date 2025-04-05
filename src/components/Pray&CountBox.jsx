@@ -1,4 +1,5 @@
 import ButterFly from "./ButterFly/ButterFly";
+import Countdown from "./Countdown/Countdown"
 import Wave from "./Pembatas/PembatasOmbak";
 import Bunga5 from '../assets/Bunga5.png';
 import Bunga6 from '../assets/Bunga6.png';
@@ -25,15 +26,7 @@ function PrayBox() {
                 <h1>Surah Ar-Rum (30:21)</h1>
               </div>
             </div>
-            <div className="CountBox card">
-              <h1>Coming In</h1>
-              <div className="Time">
-                <p className="day">00<br/>Hari</p>
-                <p className="hour">00<br/>Jam</p>
-                <p className="menit">00<br/>Menit</p>
-                <p className="Detik">00<br/>Detik</p>
-              </div>
-            </div>
+            <Countdown targetDate="2025-04-23T10:00:00" />
               <Wave Pembatas = "Atas"/>
           </div>
         </div>

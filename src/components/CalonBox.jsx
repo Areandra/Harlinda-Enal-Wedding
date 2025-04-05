@@ -11,12 +11,12 @@ function CalonBox(){
             <Wave Pembatas="Bawah"/>
               <div className="Text">
                   <h1>Assalamualaikum</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                  <p>Doa Restu Anda untuk kedua pembelai merupakan karunia yang sangat berarti bagi kami.</p>
               </div>
               <div className="NamaPembelai">
-                <CalonCard calon="Enal" pembelai="Laki" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                <CalonCard calon="Enal" pembelai="Laki" description="Putra dari Bapak dan Ibu."/>
                 <img src={Bunga2} alt="" className="BungaDan" />                
-                <CalonCard calon="Harlinda" pembelai="Perempuan" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                <CalonCard calon="Harlinda" pembelai="Perempuan" description="Putri dari Bapak Muhammad Ali dan Ibu Haspah."/>
               </div>
               <Wave Pembatas="Atas"/>
           </div>

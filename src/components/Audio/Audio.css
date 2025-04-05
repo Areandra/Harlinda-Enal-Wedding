@@ -1,0 +1,26 @@
+.audio-wrapper {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.cassette {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(88%) saturate(255%) hue-rotate(357deg) brightness(88%) contrast(95%);
+  box-shadow: var(--primary-color) 0px 0px 20px;
+}
+
+.spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

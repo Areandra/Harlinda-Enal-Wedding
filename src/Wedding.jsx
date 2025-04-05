@@ -4,6 +4,7 @@ import NavBar from './components/Navbar/NavBar.jsx'
 import GiftPage from './page/GiftPage.jsx'
 import RsvpPage from './page/RsvpPage.jsx'
 import HeroPage from './page/HeroPage.jsx'
+import Audio from "./components/Audio/Audio.jsx"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Hero() {
@@ -29,6 +30,7 @@ function WeddingDetails() {
 function Wedding() {
     return (
         <Router>
+          <Audio allowedPaths={['/opened']}/>
             <Routes>
                 <Route path="/" element={<Hero />} />
                 <Route path="/opened" element={<WeddingDetails />} />
