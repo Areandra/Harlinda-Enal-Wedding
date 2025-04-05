@@ -26,6 +26,7 @@ section#PrayPage {
 }
 
 .container#Detail{
+  position: relative;
   max-width: 400px;
   padding: 50px;
   height: auto;
@@ -48,7 +49,7 @@ section#PrayPage {
 
 .container#Location{
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
   height: auto;
 }
 
@@ -168,6 +169,7 @@ section#PrayPage {
   justify-content: baseline;
   align-items: center;
   height: auto;
+  z-index: 2;
 }
 
 #Pembelai .Text h1{
@@ -298,3 +300,98 @@ section#PrayPage {
     height: auto;
   }
 
+  #Detail .BungaPojok, #Location .BungaPojok{
+    position: absolute;
+  }
+
+  .BungaPojok#P1{
+    width: 65vw;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(100deg);
+    top: -45svh;
+    left: -3%;
+  }
+  
+  .BungaPojok#P2{
+    z-index: -2;
+    width: 57vw;
+    top: -35svh;
+    left: -28%;
+    transform-origin: bottom right;
+    transform:rotate(135deg) rotateY(180deg);
+  }
+  
+  .BungaPojok#P3{
+    width: 65vw;
+    z-index: -1;
+    transform-origin: bottom left;
+    bottom: -6svh;
+    right: -82%;
+    transform:rotate(-4deg) rotateY(180deg);
+  }
+  
+  .BungaPojok#P4{
+    z-index: -2;
+    width: 57vw;
+    bottom: 1svh;
+    right: 5%;
+    transform-origin: bottom right;
+    transform: rotate(-50deg) rotateY(180deg);
+  }
+  
+  .KupuD{
+    position: absolute;
+    scale: 0.3;
+  }
+  
+  #Detail .KupuD#k1{
+    top: 10vh;
+    left: 70vw;
+  }
+  
+  #Detail .KupuD#k2{
+    top: 25svh;
+    left: 20%;
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  
+  #Detail .KupuD#k3{
+    top: 39svh;
+    right: 19%;
+    z-index: 1;
+  }
+  
+  #Location .KupuD#k1{
+    top: 2svh;
+    left: 30%;
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  
+  #Location .KupuD#k2{
+    top: 11svh;
+    right: 12%;
+    z-index: 1;
+  }
+  
+  #Location .KupuD#k3{
+    top: 24svh;
+    left: 12%;
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  
+  #Location .KupuD#k4{
+    bottom: 35svh;
+    right: 10%;
+    z-index: 1;
+  }
+  
+  #Location .KupuD#k5{
+    bottom: 9svh;
+    left: 45%;
+    z-index: 1;
+    transform: rotateY(180deg);
+  }

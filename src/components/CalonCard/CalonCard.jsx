@@ -10,6 +10,7 @@ const CalonCard = ({ calon, pembelai, description }) => {
       <div 
         style={{
           transform: "scale(0.3)", 
+          zIndex: 1,
           position: "absolute", 
           ...(pembelai === "Laki" ? { right: "88%", top: "15%", transform:"rotateY(180deg) scale(0.3)" } : { right: "0%", top : "63%" })
         }}
