@@ -93,6 +93,10 @@
     animation:  infinite 20s AnimateRotate linear;
 }
 
+.BungaPojok{
+  animation: infinite 15s AnimateRotate linear;
+}
+
 .card div {
     position: relative;
     z-index: 2;

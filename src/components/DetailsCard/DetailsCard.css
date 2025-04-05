@@ -41,16 +41,20 @@
 
 .card_title {
   margin: 0;
-  font-size: 24px;
-  color: #333;
-  font-weight: 700;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: var(--primary-color) 0px 0px 20px !important;
 }
 
 .card_description {
   margin: 10px 0 0;
-  font-size: 14px;
-  color: #777;
   line-height: 1.4;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-family: "Quicksand", sans-serif;
+  text-shadow: var(--secondary-color) 0px 0px 20px !important;
 }
 
 .BungaR, .BungaC, .BungaL {

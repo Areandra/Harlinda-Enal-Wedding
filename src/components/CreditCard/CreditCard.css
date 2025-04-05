@@ -49,8 +49,11 @@
   left: 30px;
   cursor: default;
   color: black;
-  opacity: .9;
+  opacity: 0.9;
   transition: color .7s ease-out;
+  font-size: 0.85rem;
+  color: var(--triary-color);
+  font-family: "Quicksand", sans-serif;
 }
 
 .number {
