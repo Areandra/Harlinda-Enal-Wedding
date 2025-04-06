@@ -17,6 +17,10 @@
   box-shadow: #DBB75F 0px 0px 20px;
 }
 
+.cards#Details {
+  will-change: transform;
+}
+
 #Details svg, #Details img {
   width: 38px;
   fill: #333;

@@ -42,7 +42,7 @@ const DetailsCard = ({ title, date, time, img }) => {
         scale: 1.05,
         boxShadow: "#DBB75F 0px 0px 20px",
         borderRadius: "50% / 150px",
-        transition: { duration: 0.8, delay:0.1, ease: "easeOut" },
+        transition: { duration: 0.6, delay:0.3, ease: "easeOut" },
       });
 
       // **Step 1** → Gambar menghilang
@@ -51,7 +51,7 @@ const DetailsCard = ({ title, date, time, img }) => {
       // **Step 1** → Konten muncul
       contentControls.start({
         rotateX: 0,
-        transition: { duration: 0.8, ease: "easeOut", delay: 0.2},
+        transition: { duration: 0.8, ease: "easeOut", delay: 0.3},
       });
 
       // **Step 2** → Bunga 2 muncul setelah step 1 selesai
@@ -75,14 +75,14 @@ const DetailsCard = ({ title, date, time, img }) => {
         opacity: 0,
         scale: 0,
         y: -20,
-        transition: { duration: 0.2, ease: "easeIn" },
+        transition: { duration: 0.5, ease: "easeIn" },
       });
 
       bunga2Controls.start({
         opacity: 0,
         scale: 0,
         x: -20,
-        transition: { duration: 0.2, ease: "easeIn", delay: 0.2 },
+        transition: { duration: 0.5, ease: "easeIn", delay: 0.2 },
       });
 
       contentControls.start({
@@ -90,14 +90,14 @@ const DetailsCard = ({ title, date, time, img }) => {
         transition: { duration: 0.5, ease: "easeIn", delay: 0.2 },
       });
 
-      imgControls.start({ scale: 1, transition: { duration: 0.4, delay: 0.2 } });
+      imgControls.start({ scale: 1, transition: { duration: 0.5, delay: 0.2 } });
 
       cardControls.start({
         height: "100px",
         scale: 1,
         boxShadow: "#DBB75F 0px 0px 10px",
         borderRadius: "50% / 130px",
-        transition: { duration: 0.5, ease: "easeIn", delay: 0.3 },
+        transition: { duration: 0.5, ease: "easeIn", delay: 0.2 },
       });
     }
   }, [isCentered, cardControls, imgControls, contentControls, bunga1Controls, bunga2Controls, bunga3Controls]);

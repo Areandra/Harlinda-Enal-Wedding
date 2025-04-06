@@ -47,11 +47,20 @@ function GuestAttendance() {
   return (
     <div className="guest-attendance-container">
         <h2>Kedatangan Tamu</h2>
-        {isNameExists && <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>} 
-        <div className="input-container">
-          <button onClick={() => handleAddGuest(true)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Hadir</button>
-          <button onClick={() => handleAddGuest(false)} style={isNameExists ? {display: 'none'} : {display: 'block'}}>Tidak Hadir</button>
-        </div>
+       {guestName === "null" && (
+  <p style={{ color: 'red' }}>Tamu Tidak Diundang</p>
+)}
+
+{guestName !== "null" && isNameExists && (
+  <p style={{ color: 'red' }}>Nama Sudah Terdaftar</p>
+)}
+
+{guestName !== "null" && !isNameExists && (
+  <div className="input-container">
+    <button onClick={() => handleAddGuest(true)}>Hadir</button>
+    <button onClick={() => handleAddGuest(false)}>Tidak Hadir</button>
+  </div>
+)}
         <button className="list-guest" onClick={toggleGuestList}>
           {showGuestList ? "Sembunyikan Daftar Tamu" : "Tampilkan Daftar Tamu"}
         </button>

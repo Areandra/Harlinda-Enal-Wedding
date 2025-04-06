@@ -92,20 +92,20 @@ function Comments() {
   };
 
   const handleReply = async (commentId) => {
-    if (!replyText[commentId]?.trim() || !name.trim()) return;
+  if (!replyText[commentId]?.trim() || !name.trim()) return;
 
-    const commentRef = doc(db, "comments", commentId);
-    await updateDoc(commentRef, {
-      replies: arrayUnion({
-        name: name,
-        text: replyText[commentId],
-        timestamp: new Date().toISOString(),
-      }),
-    });
+  const commentRef = doc(db, "comments", commentId);
+  await updateDoc(commentRef, {
+    replies: arrayUnion({
+      name: name,
+      text: replyText[commentId],
+      timestamp: new Date().toISOString(),
+    }),
+  });
 
-    setReplyText({ ...replyText, [commentId]: "" });
-    setShowReplyInput(null);
-  };
+  // Kosongkan input tapi jangan tutup form-nya
+  setReplyText("");
+};
 
   return (
     <>
@@ -115,15 +115,16 @@ function Comments() {
 
       <form onSubmit={handleSubmit} className="comment-form">
         <input
+          disabled={name === "null"}
           type="text"
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSubmit(e)}
-          placeholder="Tambahkan komentar..."
+          placeholder={name === "null" ? "TAMU TIDAK DIUNDANG" : "Tambahkan komentar..."}
           className="comment-input"
           required
         />
-        <button type="submit" className="comment-submit">Kirim</button>
+      <button type="submit" className="comment-submit">Kirim</button>
       </form>
 
       {/* Wrapper untuk scroll */}
