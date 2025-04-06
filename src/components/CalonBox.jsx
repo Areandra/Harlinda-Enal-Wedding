@@ -16,7 +16,7 @@ function CalonBox(){
               <div className="NamaPembelai">
                 <CalonCard calon="Enal" pembelai="Laki" description="Putra dari Bapak Muhammad Saleh dan Ibu Hasiah."/>
                 <img src={Bunga2} alt="" className="BungaDan" />                
-                <CalonCard calon="Harlinda" pembelai="Perempuan" description="Putri dari Bapak Muhammad Ali dan Ibu Haspah."/>
+                <CalonCard calon="Linda" pembelai="Perempuan" description="Putri dari Bapak Muhammad Ali dan Ibu Haspah."/>
               </div>
               <Wave Pembatas="Atas"/>
           </div>
