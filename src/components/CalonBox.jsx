@@ -14,7 +14,7 @@ function CalonBox(){
                   <p>Doa Restu Anda untuk kedua pembelai merupakan karunia yang sangat berarti bagi kami.</p>
               </div>
               <div className="NamaPembelai">
-                <CalonCard calon="Enal" pembelai="Laki" description="Putra dari Bapak dan Ibu."/>
+                <CalonCard calon="Enal" pembelai="Laki" description="Putra dari Bapak Muhammad Saleh dan Ibu Hasiah."/>
                 <img src={Bunga2} alt="" className="BungaDan" />                
                 <CalonCard calon="Harlinda" pembelai="Perempuan" description="Putri dari Bapak Muhammad Ali dan Ibu Haspah."/>
               </div>

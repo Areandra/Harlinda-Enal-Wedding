@@ -81,7 +81,7 @@
   gap: 10px;
 }
 
-.comment-name {
+.comment-name, .reply-name {
   font-weight: bold;
   color: var(--triary-color);
   font-family: "Quicksand", sans-serif;
@@ -89,7 +89,7 @@
 
 }
 
-.comment-time {
+.comment-time, .reply-time {
   font-size: 0.65rem;
   color: var(--triary-color);
   font-family: "Quicksand", sans-serif;
@@ -153,7 +153,7 @@
 
 /* Balasan */
 .reply {
-  background: #444;
+  background: repeating-linear-gradient(145deg, green 0px, green 20px, darkgreen 35px, green 100px);
   padding: 8px;
   border-radius: 6px;
   margin-top: 5px;
@@ -166,23 +166,13 @@
   font-size: 13px;
 }
 
-.reply-name {
-  font-weight: bold;
-  color: #ff4b4b;
-}
-
-.reply-time {
-  font-size: 11px;
-  color: #bbb;
-}
-
 /* Indentasi balasan */
 
 
 .reply-list {
   margin-top: 5px;
   padding-left: 30px;
-  border-left: 2px solid gray;
+  border-left: 2px solid darkgreen;
   list-style: none;
 }
 

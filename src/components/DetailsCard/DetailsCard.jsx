@@ -42,30 +42,30 @@ const DetailsCard = ({ title, date, time, img }) => {
         scale: 1.05,
         boxShadow: "#DBB75F 0px 0px 20px",
         borderRadius: "50% / 150px",
-        transition: { duration: 0.5, ease: "easeOut" },
+        transition: { duration: 0.8, delay:0.1, ease: "easeOut" },
       });
 
       // **Step 1** → Gambar menghilang
-      imgControls.start({ scale: 0, transition: { duration: 0.3, delay: 0.2 } });
+      imgControls.start({ scale: 0, transition: { duration: 0.3, delay: 0.1 } });
 
       // **Step 1** → Konten muncul
       contentControls.start({
         rotateX: 0,
-        transition: { duration: 0.5, ease: "easeOut", delay: 0.4 },
+        transition: { duration: 0.8, ease: "easeOut", delay: 0.2},
       });
 
       // **Step 2** → Bunga 2 muncul setelah step 1 selesai
       bunga2Controls.start({
         opacity: 1,
         scale: 1,
-        transition: { duration: 0.4, ease: "easeOut", delay: 0.7 },
+        transition: { duration: 0.4, ease: "easeOut", delay: 0.4 },
       });
 
       // **Step 3** → Bunga 1 & Bunga 3 muncul terakhir
       bunga1Controls.start({
         opacity: 1,
         scale: 1,
-        transition: { duration: 0.4, ease: "easeOut", delay: 1 },
+        transition: { duration: 0.4, ease: "easeOut", delay: 0.4 },
       });
 
     } else {
@@ -75,14 +75,14 @@ const DetailsCard = ({ title, date, time, img }) => {
         opacity: 0,
         scale: 0,
         y: -20,
-        transition: { duration: 0.3, ease: "easeIn" },
+        transition: { duration: 0.2, ease: "easeIn" },
       });
 
       bunga2Controls.start({
         opacity: 0,
         scale: 0,
         x: -20,
-        transition: { duration: 0.3, ease: "easeIn", delay: 0.4 },
+        transition: { duration: 0.2, ease: "easeIn", delay: 0.2 },
       });
 
       contentControls.start({
@@ -90,7 +90,7 @@ const DetailsCard = ({ title, date, time, img }) => {
         transition: { duration: 0.5, ease: "easeIn", delay: 0.2 },
       });
 
-      imgControls.start({ scale: 1, transition: { duration: 0.3, delay: 0.8 } });
+      imgControls.start({ scale: 1, transition: { duration: 0.4, delay: 0.2 } });
 
       cardControls.start({
         height: "100px",

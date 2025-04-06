@@ -2,6 +2,8 @@ import PhotoProfil from '../../assets/Pr.jpeg';
 import Bunga3 from '../../assets/Bunga3.png'
 import Bunga4 from '../../assets/Bunga4.png'
 import ButterFly from '../ButterFly/ButterFly';
+import Laki from '../../assets/Laki.jpg';
+import Perempuan from '../../assets/Perempuan.jpg';
 import './CalonCard.css'; 
 
 const CalonCard = ({ calon, pembelai, description }) => {
@@ -43,11 +45,11 @@ const CalonCard = ({ calon, pembelai, description }) => {
         <>
           <p>{description}</p>
           <h2>{calon}</h2>
-          <img className='fp' src={PhotoProfil} alt="profil" />
+          <img className='fp' src={Laki} alt="profil" />
         </>
       ) : pembelai === "Perempuan" ? (
         <>
-          <img className='fp' src={PhotoProfil} alt="Profil" />
+          <img className='fp' src={Perempuan} alt="Profil" />
           <h2>{calon}</h2>
           <p>{description}</p>
         </>
